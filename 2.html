@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>인촌이 짱짱 맨</title>
+    <style>
+      .children1 {
+        grid-column: 1 / -1;
+      }
+      .father {
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 30px 3fr auto 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        /* 전체가 100이야 1fr 1fr 1fr 1fr 4개 4등분해 각각 1/4 */
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="father">
+      <div class="children1" style="background-color: red"></div>
+      <div class="children2" style="background-color: blue"></div>
+      <div class="children3" style="background-color: green"></div>
+      <div class="children4" style="background-color: yellow"></div>
+      <div class="children5" style="background-color: tomato"></div>
+    </div>
+  </body>
 </html>
